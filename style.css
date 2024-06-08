@@ -1,0 +1,264 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    color: white;
+    background: rgba(23, 22, 22, 0.932);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+}
+
+.container:first-child::before {
+    content: "";
+    background: url(./netflixmoviecollection.jpg) no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%; 
+    opacity: 0.3;
+    z-index: -1;
+}
+
+.container:nth-child(2) {
+    background-color: black; 
+    text-align: center; 
+}
+.container:nth-child(2) h1 {
+    font-size: 2.5rem;
+}
+
+.container:nth-child(2) p {
+    font-size: 1.2rem;
+}
+
+.divider {
+    height: 2px;
+    background-color: #ffffff; /* White line color */
+    position: absolute;
+    top: calc(50% - 1px); 
+    left: 0;
+    width: 100%;
+    z-index: 2; 
+}
+
+.container .navbar {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.container .navbar .left img {
+    height: 100px;
+    margin-right: 20px; 
+}
+
+
+.container .navbar .right .language {
+    font-size: 16px;
+    padding: 7px 10px;
+    color: whitesmoke;
+    background: transparent;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+.container .navbar .right .language option[value="English"] {
+    background-image: none;
+    padding-left: 10px;
+}
+
+.container .navbar .right button {
+    font-size: 16px;
+    margin-left: 15px;
+    font-weight: 400;
+    padding: 7px 17px;
+    background: #e50914;
+    cursor: pointer;
+    outline: none;
+    border-radius: 4px;
+    border: none;
+}
+
+.container .navbar .right button a {
+    text-decoration: none;
+    color: white;
+}
+
+.container .title {
+    padding: 60px 45px;
+}
+
+.container .title .content {
+    width: 950px;
+    margin: auto;
+    padding: 75px 0;
+    text-align: center;
+}
+
+.container .title .content h1 {
+    font-size: 2.5rem; 
+    margin-bottom: 15px; 
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+.container .title .content form .email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.container .title .content form .email input {
+    height: 50px;
+    width: 400px; 
+    padding: 10px; 
+    font-size: 18px;
+    outline: none;
+    color: white; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    border: 1px solid #e50914;
+    border-radius: 5px;
+}
+.container .title .content h4 {
+    font-size: 1.5rem; 
+    margin: 15px 0; 
+    font-weight: 100;
+}
+.container .title .content form .email input::placeholder {
+    color: white; 
+    opacity: 0.6; 
+    border: none; 
+    border-radius: 5px;
+    padding: 10px; 
+    font-size: 18px; 
+    outline: none;
+}
+
+.container .title .content h3 {
+    font-size: 1.5rem; 
+    margin: 15px 0; 
+    font-weight: 400;
+}
+
+.container .title .content form .email button {
+    height: 50px; 
+    width: 150px; 
+    font-size: 18px; 
+    padding: 7px 15px; 
+    background: #e50914;
+    cursor: pointer;
+    outline: none;
+    border-radius: 5px; 
+    border: none;
+    margin-left: -5px;
+    color: white;
+}
+
+.container .title .content form .email button:hover {
+    background-color: #f40612;
+}
+
+.container .title .content form .email button a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.container .image {
+    position: relative;
+    width: 60%;
+    height: auto;
+    margin: auto; 
+    display: block; 
+}
+
+.container .video {
+    position: absolute;
+    top: 37.8%;
+    left: 28%;
+    width: 43%; 
+    height: auto;
+    object-fit: cover;
+}
+.container .navbar .right button,
+.button {
+    color: white; 
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+.footer p {
+    margin-bottom: 10px;
+    color: white;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; 
+    align-items: flex-start;
+    padding-left: 20px;
+}
+
+
+.footer-links p {
+    flex-basis: 100%; 
+}
+
+.footer-links ul {
+    flex-basis: calc(50% - 10px); 
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+}
+
+.footer-links ul li {
+    margin-bottom: 5px;
+}
+
+.footer-links ul li a {
+    color: white;
+    text-decoration: underline;
+}
+
+.footer-links ul:nth-child(odd) {
+    margin-right: 20px;
+
+.footer-links ul:last-child {
+    margin-right: 0; 
+}
+
+.footer-links ul:last-child li:last-child {
+    margin-bottom: 0; 
+}
+
+.footer-links ul:last-child a {
+    display: block;
+}
+@font-face {
+    font-family: 'Gotham';
+    src: url('./Gotham-Font/Gotham-Font/Gotham-Bold.otf') format('otf'),
+         url('./Gotham-Font/Gotham-Font/GothamBold.ttf') format('ttf');
+
+    font-weight: normal;
+    font-style: normal;
+}
+}

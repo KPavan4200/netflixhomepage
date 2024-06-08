@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('./netflixmoviecollection.jpg'); /* Replace 'netflix_background.jpg' with the path to your Netflix background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 1); /* Black color with opacity */
+}
+
+h1 {
+    text-align: center;
+    color: white; /* Set heading color to white */
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background for better readability */
+}
+
+.button {
+    display: inline-block;
+    background-color: #e50914; /* Netflix red color */
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #ff0000; /* Darker shade of Netflix red on hover */
+}
