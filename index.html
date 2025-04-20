@@ -1,74 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Netflix India - Watch TV shows and movies</title>
-    <link rel="icon" type="image/x-icon" href="./favicon.ico">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Netflix India – Watch TV Shows Online, Watch Movies Online</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.ico" />
 </head>
 <body>
-    <div class="container">
-        <nav class="navbar">
-            <div class="left">
-                <a href="./index.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzf-S4lfXOC6OStq7aFM_a04oeIv9W6Gh6mw&usqp=CAU" height="70" alt="Netflix logo"/></a>
-            </div>
-            <div class="right">
-                <select name="language" class="language">
-                    <option value="English"><h6>艾A</h6> English</option>
-                    <option value="Telugu">Telugu</option>
-                </select>
-                <button>Sign In</button>
-            </div>
-        </nav>
-        <div class="title">
-            <div class="content">
-                <h1>Unlimited TV Shows, Movies and more.</h1>
-                <h3>Watch anytime, Cancel anytime.</h3><br>
-                <form action="#">
-                    <h4>Ready to watch? Enter your Email Address to create your membership.</h4>
-                    <div class="email">
-                        <input type="email" name="email" placeholder="Enter your Email Address">
-                        <button>Get Started</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div> <!-- End of First Container -->
-    <div class="container">
-        <br /><br /><br />
-        <h1>Enjoy on your TV</h1><br />
-        <p> Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and<br />more. </p>
-        <img src="./NetflixTv.png" height="70" alt="Netflix TV image" class="image">
-        <video autoplay playsinline muted loop class="video">
-            <source src="./NETFLIX VIDEO ON TV.m4v" type="video/mp4">
-        </video>
-    </div> <!-- End of Second Container -->
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-links">
-            <div>
-                <p>Questions? Call: 000-100-000-1004</p>
-                <ul> 
-                    <h4>&nbsp</h4>
-                    <li><a draggable="true" href="https://help.netflix.com/en/">Help Centre</a></li>
-                    <li><a draggable="true" href="https://www.netflix.com/login?nextpage=https%3A%2F%2Fwww.netflix.com%2Fyouraccount">Account</a></li>
-                    <li><a draggable="true" href="https://devices.netflix.com/en/">Ways to Watch</a></li>
-                    <li><a draggable="true" href="https://help.netflix.com/legal/privacy">Privacy</a></li>
-                </ul>
-            </div>
-            <div>
-                <ul><br />
-                    <h4>&nbsp</h4>
-                    <li><a draggable="true" href="./ContactUs.html">Contact Us</a></li>
-                    <li><a draggable="true" href="https://www.speedtest.net/">Speed Test</a></li>
-                    <!-- Add more items as needed -->
-                </ul>
-            </div>
-            <h4>&nbsp</h4>
-            <p><br />Netflix India</p>
-        </div>
-    </footer>
-    
+  <div class="hero-section">
+    <div class="navbar">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png" alt="Netflix Logo" class="logo">
+      <button class="signin-btn">Sign In</button>
+    </div>
+    <div class="hero-content">
+      <h1>Unlimited movies, TV shows and more</h1>
+      <h3>Watch anywhere. Cancel anytime.</h3>
+      <p>Ready to watch? Enter your email to create or restart your membership.</p>
+      <div class="email-signup">
+        <input type="email" placeholder="Email address">
+        <button>Get Started &gt;</button>
+      </div>
+    </div>
+  </div>
+
+  <section class="feature-section">
+    <div class="text">
+      <h1>Enjoy on your TV</h1>
+      <p>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
+    </div>
+    <div class="media">
+      <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png" alt="TV screen showing Netflix content" />
+      <video autoplay muted loop>
+        <source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-in-0819.m4v" type="video/mp4" />
+      </video>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>Questions? Call 000-800-919-1694</p>
+    <div class="footer-cols">
+      <ul>
+        <li>FAQ</li>
+        <li>Help Centre</li>
+        <li>Account</li>
+        <li>Media Centre</li>
+      </ul>
+      <ul>
+        <li>Investor Relations</li>
+        <li>Jobs</li>
+        <li>Ways to Watch</li>
+        <li>Terms of Use</li>
+      </ul>
+      <ul>
+        <li>Privacy</li>
+        <li>Cookie Preferences</li>
+        <li>Corporate Information</li>
+        <li>Contact Us</li>
+      </ul>
+    </div>
+    <select class="language-select" title="Select language">
+      <option value="en">English</option>
+      <option value="te">Telugu</option>
+    </select>
+    <p>Netflix India</p>
+  </footer>
 </body>
 </html>
